@@ -19,5 +19,5 @@ jobs:
   container:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checout@v4
+      - uses: actions/checkout@v4
       - run: docker -v
