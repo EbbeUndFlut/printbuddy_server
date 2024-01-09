@@ -5,7 +5,7 @@ on:
       - 'main'
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,3 +16,8 @@ jobs:
           node-version: '20.x'
       - run: npm ci
       - run: npm test
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checout@v4
+      - run: docker -v
