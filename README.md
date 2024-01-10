@@ -1,0 +1,1 @@
+![example workflow](https://github.com/EbbeUndFlut/printbuddy_server/actions/workflows/testing.yml/badge.svg)
