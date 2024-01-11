@@ -1,4 +1,4 @@
-import { createSalt, hashPassword } from "../src/authentification/auth.service.js"
+import { createSalt, hashPassword } from "../../src/authentification/auth.service.js"
 
 test('Get a random Salt with length of 12 Bytes', () => {
     const salt = createSalt()

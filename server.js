@@ -16,5 +16,8 @@ app.use(cors({
 app.use(cookieParser())
 app.use(express.json())
 
+app.get('/health', (req, res) => {
+    return res.status(200).end()
+})
 app.use('/api/auth', authRouter)
-app.listen(process.env.PORT, console.log(process.env.PORT))
+export const server = app.listen(process.env.PORT, console.log(process.env.PORT))
